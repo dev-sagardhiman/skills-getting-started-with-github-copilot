@@ -91,9 +91,35 @@ section h3 {
 .activity-card .participants-list {
   margin: 8px 0 0 18px;
   padding-left: 0;
-  list-style-type: disc;
+  list-style-type: none;
   color: #333;
   font-size: 15px;
+}
+
+.participants-list.no-bullets {
+  list-style: none;
+  padding-left: 0;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.delete-participant {
+  background: none;
+  border: none;
+  color: #c00;
+  cursor: pointer;
+  font-size: 1em;
+  margin-left: 0.5em;
+  padding: 0 0.2em;
+  transition: color 0.2s;
+}
+.delete-participant:hover {
+  color: #f00;
+}
 }
 
 .activity-card .participants-section.no-participants {
